@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personality Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-4">Personality Survey</h1>
+        <p class="mb-4">Please answer the following questions to help us understand your preferences better:</p>
+        <form method="POST" action="/survey" class="bg-white p-6 rounded shadow-md">
+            <div class="mb-4">
+                <label class="block text-gray-700">What is your favorite hobby?</label>
+                <select name="question1" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Reading">Reading</option>
+                    <option value="Traveling">Traveling</option>
+                    <option value="Cooking">Cooking</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Crafting">Crafting</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">How do you prefer to spend your weekends?</label>
+                <select name="question2" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Relaxing at home">Relaxing at home</option>
+                    <option value="Going out with friends">Going out with friends</option>
+                    <option value="Exploring new places">Exploring new places</option>
+                    <option value="Engaging in hobbies">Engaging in hobbies</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Do you enjoy outdoor activities?</label>
+                <select name="question3" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">What type of music do you like?</label>
+                <select name="question4" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Pop">Pop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Classical">Classical</option>
+                    <option value="Hip-Hop">Hip-Hop</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Are you a tech enthusiast?</label>
+                <select name="question5" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Do you prefer reading books or watching movies?</label>
+                <select name="question6" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Reading">Reading</option>
+                    <option value="Watching Movies">Watching Movies</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">How often do you cook at home?</label>
+                <select name="question7" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Every day">Every day</option>
+                    <option value="A few times a week">A few times a week</option>
+                    <option value="Rarely">Rarely</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Do you enjoy crafting or DIY projects?</label>
+                <select name="question8" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">What is your favorite type of cuisine?</label>
+                <select name="question9" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Italian">Italian</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Mexican">Mexican</option>
+                    <option value="Indian">Indian</option>
+                    <option value="American">American</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">How do you feel about fitness and exercise?</label>
+                <select name="question10" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="I love it!">I love it!</option>
+                    <option value="I do it occasionally">I do it occasionally</option>
+                    <option value="Not really">Not really</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Are you a pet owner?</label>
+                <select name="question11" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Do you prefer solo activities or group activities?</label>
+                <select name="question12" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Solo Activities">Solo Activities</option>
+                    <option value="Group Activities">Group Activities</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">What is your favorite season?</label>
+                <select name="question13" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Fall">Fall</option>
+                    <option value="Winter">Winter</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">How important is sustainability to you?</label>
+                <select name="question14" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Very Important">Very Important</option>
+                    <option value="Somewhat Important">Somewhat Important</option>
+                    <option value="Not Important">Not Important</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Do you enjoy traveling?</label>
+                <select name="question15" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">What is your favorite way to relax?</label>
+                <select name="question16" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Reading">Reading</option>
+                    <option value="Watching TV">Watching TV</option>
+                    <option value="Exercising">Exercising</option>
+                    <option value="Meditating">Meditating</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Are you a collector of anything?</label>
+                <select name="question17" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">How do you feel about surprises?</label>
+                <select name="question18" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="I love them!">I love them!</option>
+                    <option value="I don't mind them">I don't mind them</option>
+                    <option value="I prefer to know">I prefer to know</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Do you prefer practical gifts or sentimental gifts?</label>
+                <select name="question19" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Practical Gifts">Practical Gifts</option>
+                    <option value="Sentimental Gifts">Sentimental Gifts</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">How often do you attend social events?</label>
+                <select name="question20" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Frequently">Frequently</option>
+                    <option value="Occasionally">Occasionally</option>
+                    <option value="Rarely">Rarely</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">What is your favorite color?</label>
+                <select name="question21" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Do you enjoy games or puzzles?</label>
+                <select name="question22" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">How do you feel about fashion and style?</label>
+                <select name="question23" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="I love it!">I love it!</option>
+                    <option value="I don't care much">I don't care much</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Are you a fan of any particular sports?</label>
+                <select name="question24" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">What is your favorite way to express creativity?</label>
+                <select name="question25" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm" required>
+                    <option value="Art">Art</option>
+                    <option value="Writing">Writing</option>
+                    <option value="Music">Music</option>
+                    <option value="Crafting">Crafting</option>
+                </select>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
